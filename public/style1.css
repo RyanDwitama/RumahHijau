@@ -1,0 +1,100 @@
+/* HomestayCss Start */
+/* @media screen and (max-width: 1041px) {
+  .HomestayPage1screen {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      margin-left: -220px;
+  }
+} */
+
+.HomestayPage1{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 275px;
+    display: flex;
+}
+
+/* @media screen and (max-width: 1041px) {
+  .HomestayPage2screen {
+    max-width: 240px;
+    min-height: 330px;
+    border: groove 2px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+  }
+} */
+
+.HomestayPage2{
+  width: 800px;
+  height: 110px;
+  border: groove 2px;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  border-bottom-left-radius: 35px;
+}
+
+/* @media screen and (max-width: 1041px) {
+  .HomestayPage3screen {
+    margin-top: 10px;
+  }
+} */
+
+.HomestayPage3{
+  display: flex;
+  margin-top: 00%;
+}
+
+/* @media screen and (max-width: 1041px) {
+  .HomestayPage4screen {
+    border-color: white;
+    margin-top: 15px;
+  }
+} */
+
+.HomestayPage4{
+  mask-border-width: 100px;
+  border-right: 1px solid;
+  border-color: #25b448;
+  margin-top: 15px;
+}
+
+.Homestay1Page4{
+  list-style: none;
+  color: #25b448;
+  margin-right: 100px
+}
+/* HomestayCss End*/
+
+form.example input[type=text] {
+
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
