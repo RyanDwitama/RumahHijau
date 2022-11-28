@@ -305,7 +305,7 @@ input{
             <div style="margin-top: 1%; margin-left: 10%; margin-right: 50%; text-align: justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus harum quasi cupiditate eveniet eos dicta officia qui nemo nostrum, soluta facere sapiente, veniam ipsam consectetur laudantium iste blanditiis at. Eum!</div>
 
             <div style="text-align: right">
-                <a href="https://fontawesome.com/v4/icons/"><button type="orderFood" style="margin-right: 2%">Order Food</button></a>
+                <a href="https://fontawesome.com/v4/icons/"><button type="button" style="margin-right: 2%">Order Food</button></a>
                 <div style="float: left; margin-left: 78%">Rp. 34.000,00</div>
             </div>
         </form>
