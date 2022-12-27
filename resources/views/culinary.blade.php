@@ -16,15 +16,6 @@ body{
     font-family:Arial;
 }
 
-.wrap{
-    width:80%;
-    margin:auto;
-    background:#fff;
-    border-radius: 3%;
-    padding-top: 2%;
-    margin-top: 5%;
-}
-
 form{
     margin:2%;
 }
@@ -39,46 +30,9 @@ input{
     border:1px solid gray;
     font-size:15px;
 }
-
-.openbtn{
-    background:#f1f1f1;
-    border:none;
-    padding:10px 15px;
-    font-size:20px;
-    cursor:pointer;
-    float:right;
-}
-
-.overlay{
-    height:100%;
-    width:100%;
-    display:none;
-    position:fixed;
-    z-index:1;
-    top:0;
-    left:0;
-    background:rgba(0,0,0,0.8);
-}
-
-.closebtn{
-    position:absolute;
-    top:0%;
-    right:10%;
-    font-size:60px;
-    cursor:pointer;
-    color: red;
-}
-
-.rating{
-    position: absolute;
-    top: 14%;
-    right: 15%;
-}
-
 </style>
 
-
-
+<!-------------------------- Sort-Start -------------------------------->
 <div style="margin-left: 5px; margin-top: 100px">  
   <ul style="display: flex">
       <li style="list-style: none">
@@ -155,6 +109,9 @@ input{
           </div>
       </li>
 
+<!-------------------------- Sort-End -------------------------------->
+
+<!-------------------------- Menu-Start -------------------------------->
       <li style="list-style: none; margin-left: 200px">
           <h3>
             <div style="width: 50%; float: left;">
@@ -168,7 +125,7 @@ input{
             <div style="width: 40%; float: left;">
                 <form class="example" action="/action_page.php" style="margin:auto;">
                     <input type="text" placeholder="Search.." name="search2">
-                    <button type="search"><i class="fa fa-search" style="font-size: 225%"></i></button>
+                    <button type="submit"><i class="fa fa-search" style="font-size: 225%"></i></button>
                 </form>
             </div>
           </h3>
@@ -178,66 +135,36 @@ input{
           
           <br>  <br>
 
-        <div style="width: 90%">
-            <img src="gambar/contohgambar.png" width="25%" style="float: left; margin-right: 12%; border-radius: 30px;">
-            <img src="gambar/contohgambar.png" width="25%" style="float: left; margin-right: 12%; border-radius: 30px;">
-            <img src="gambar/contohgambar.png" width="25%" style="float: left; border-radius: 30px;">  
-            
-            <div style="width: 25%; margin-right: 12%; float: left;">
-                <b style="font-size: 100%;">Roasted Arparagus with Pamersan</b>
+        <div style="width: 90%; display:inline-block">
+            {{---------------- LOOPING CULINARY LIST ----------------}}
+            <div style="width: 30%; margin: 1%; display:inline-block">
+                <img src="gambar/contohgambar.png" style="width: 100%; border-radius: 10px">
+                <p style="font-weight: bold">Roasted Asparagus with Pamersan</p>
+                <button class = "openbtnCulinary" onclick ="openForm()">More</button>
             </div>
-
-            <div style="width: 25%; margin-right: 12%; float: left;">
-                <b style="font-size: 100%;">Roasted Arparagus with Pamersan</b>
+            {{---------------- LOOPING CULINARY END ----------------}}
+            <div style="width: 30%; margin: 1%; display:inline-block">
+                <img src="gambar/contohgambar.png" style="width: 100%; border-radius: 10px">
+                <p style="font-weight: bold">Roasted Asparagus with Pamersan</p>
+                <button class = "openbtnCulinary" onclick ="openForm()">More</button>
             </div>
-
-            <div style="width: 25%; float: left;">
-                <b style="font-size: 100%;">Roasted Arparagus with Pamersan</b>
+            <div style="width: 30%; margin: 1%; display:inline-block">
+                <img src="gambar/contohgambar.png" style="width: 100%; border-radius: 10px">
+                <p style="font-weight: bold">Roasted Asparagus with Pamersan</p>
+                <button class = "openbtnCulinary" onclick ="openForm()">More</button>
             </div>
-
-            <div style="width: 25%; float: left; margin-top: 1%; margin-bottom: 1%; margin-right: 12%">
-                <button class = "openbtn" onclick ="openForm()" style="text-decoration: none; border-style: groove; border-color: green; border-radius: 10px; color:green; padding: 1%; float:left; margin-bottom: 4%">More</button>
+            <div style="width: 30%; margin: 1%; display:inline-block">
+                <img src="gambar/contohgambar.png" style="width: 100%; border-radius: 10px">
+                <p style="font-weight: bold">Roasted Asparagus with Pamersan</p>
+                <button class = "openbtnCulinary" onclick ="openForm()">More</button>
             </div>
-            
-            <div style="width: 25%; float: left; margin-top: 1%; margin-bottom: 1%; margin-right: 12%;">
-                <button class = "openbtn" onclick ="openForm()" style="text-decoration: none; border-style: groove; border-color: green; border-radius: 10px; color:green; padding: 1%; float:left; margin-bottom: 4%">More</button>
-            </div>
-
-            <div style="width: 25%; float: left; margin-top: 1%; margin-bottom: 1%">
-                <button class = "openbtn" onclick ="openForm()" style="text-decoration: none; border-style: groove; border-color: green; border-radius: 10px; color:green; padding: 1%; float:left; margin-bottom: 4%">More</button>
-            </div>
-        </div>
-
-        <div style="width: 90%">
-            <img src="gambar/contohgambar.png" width="25%" style="float: left; margin-right: 12%; border-radius: 30px;">
-            <img src="gambar/contohgambar.png" width="25%" style="float: left; margin-right: 12%; border-radius: 30px;">
-            <img src="gambar/contohgambar.png" width="25%" style="float: left; border-radius: 30px;">  
-            
-            <div style="width: 25%; margin-right: 12%; float: left;">
-                <b style="font-size: 100%;">Roasted Arparagus with Pamersan</b>
-            </div>
-
-            <div style="width: 25%; margin-right: 12%; float: left;">
-                <b style="font-size: 100%;">Roasted Arparagus with Pamersan</b>
-            </div>
-
-            <div style="width: 25%; float: left;">
-                <b style="font-size: 100%;">Roasted Arparagus with Pamersan</b>
-            </div>
-
-            <div style="width: 25%; float: left; margin-top: 1%; margin-bottom: 1%; margin-right: 12%;">
-                <button class = "openbtn" onclick ="openForm()" style="text-decoration: none; border-style: groove; border-color: green; border-radius: 10px; color:green; padding: 1%; float:left; margin-bottom: 4%">More</button>
-            </div>
-            
-            <div style="width: 25%; float: left; margin-top: 1%; margin-bottom: 1%; margin-right: 12%;">
-                <button class = "openbtn" onclick ="openForm()" style="text-decoration: none; border-style: groove; border-color: green; border-radius: 10px; color:green; padding: 1%; float:left; margin-bottom: 4%">More</button>
-            </div>
-
-            <div style="width: 25%; float: left; margin-top: 1%; margin-bottom: 1%">
-                <button class = "openbtn" onclick ="openForm()" style="text-decoration: none; border-style: groove; border-color: green; border-radius: 10px; color:green; padding: 1%; float:left; margin-bottom: 4%">More</button>
+            <div style="width: 30%; margin: 1%; display:inline-block">
+                <img src="gambar/contohgambar.png" style="width: 100%; border-radius: 10px">
+                <p style="font-weight: bold">Roasted Asparagus with Pamersan</p>
+                <button class = "openbtnCulinary" onclick ="openForm()">More</button>
             </div>
         </div>
-
+<!-------------------------- Menu-End -------------------------------->
         
           <!------------------------------------------------------------------------------------------------------>
           <!-- <b style="float: left; margin-right: 50px; font-size: 20px;">Roasted Arparagus with Pamersan</b>
@@ -274,19 +201,17 @@ input{
         </li>
   </ul>
  
-<!-------------------------------------popup gambar-------------------------->
+<!------------------------------------- Popup-Gambar-Start -------------------------->
+<div id ="myOverlay" class ="overlayCulinary">
 
-
-<div id ="myOverlay" class ="overlay">
-
-    <span class ="closebtn" onclick = "closeForm()" title ="Close"> X </span>
-    <span class ="rating" title="Rating">
+    <span class ="closebtnCulinary" onclick = "closeForm()" title ="Close"> X </span>
+    <span class ="ratingCulinary" title="Rating">
         <div style="font-size: 200%">
             Ini Rating <i class="fa fa-thumbs-up"></i>
         </div>
     </span>
 
-    <div class = "wrap">
+    <div class = "wrapCulinary">
         <form>
             <div style="text-align: center">
                 <b style="color:black; font-size: 200%">Menu Description</b>
@@ -305,7 +230,7 @@ input{
             <div style="margin-top: 1%; margin-left: 10%; margin-right: 50%; text-align: justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus harum quasi cupiditate eveniet eos dicta officia qui nemo nostrum, soluta facere sapiente, veniam ipsam consectetur laudantium iste blanditiis at. Eum!</div>
 
             <div style="text-align: right">
-                <a href="https://fontawesome.com/v4/icons/"><button type="button" style="margin-right: 2%">Order Food</button></a>
+                <a href="https://fontawesome.com/v4/icons/"><button type="button" style="margin-right: 2%; margin-bottom: 3%">Order Food</button></a>
                 <div style="float: left; margin-left: 78%">Rp. 34.000,00</div>
             </div>
         </form>
@@ -322,5 +247,5 @@ input{
         document.getElementById("myOverlay").style.display = "none";
     }
 </script>
-
+<!------------------------------------- Popup-Gambar-End -------------------------->
 @endsection
