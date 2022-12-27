@@ -1,10 +1,16 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 use App\Http\Controllers\HomestayController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CulinaryController;
-use App\Http\Controllers\Test1Controller;
+use App\Http\Controllers\SouvenirController;
+use App\Http\Controllers\DestinationController;
+use App\Http\Controllers\DestinationDetailController;
+use App\Http\Controllers\PromoController;
+use App\Http\Controllers\ContactUsController;
+use App\Models\Listing;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,11 +24,43 @@ use App\Http\Controllers\Test1Controller;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('home', [
+        'heading' => 'Latest Listings',
+        'home' => [
+        [
+            'id' => 1,
+            'title' => 'Listing One',
+            'description' => 'lorem lorem lorem'
+        ],
+        [
+            'id' => 2,
+            'title' => 'Listing Two',
+            'description' => 'lorem lorem lorem'
+        ]
+    ]
+        ]);
 });
 
-// Route::get('/home', [HomeController::class, 'index']
-//     )->name('home');
+// , [
+//     'heading' => 'Latest Listings',
+//     'home' => [
+//     [
+//         'id' => 1,
+//         'title' => 'Listing One',
+//         'description' => 'lorem lorem lorem'
+//     ],
+//     [
+//         'id' => 2,
+//         'title' => 'Listing Two',
+//         'description' => 'lorem lorem lorem'
+//     ]
+// ]
+//     ]
+
+
+// Route::get('/homestay', function () {
+//     return view('homestay');
+// });
 
 Route::get('/homestay', [HomeStayController::class, 'index']
     )->name('homestay');
@@ -30,5 +68,17 @@ Route::get('/homestay', [HomeStayController::class, 'index']
 Route::get('/culinary', [CulinaryController::class, 'index']
     )->name('culinary');
 
-Route::get('/test1', [Test1Controller::class, 'index']
-)->name('test1');
+Route::get('/souvenir', [SouvenirController::class, 'index']
+)->name('souvenir');
+
+Route::get('/destination', [DestinationController::class, 'index']
+)->name('destination');
+
+Route::get('/promo', [PromoController::class, 'index']
+)->name('promo');
+
+Route::get('/contactUs', [ContactUsController::class, 'index']
+)->name('contactUs');
+
+Route::get('/destinationDetail', [DestinationDetailController::class, 'index']
+)->name('destinationDetail');
